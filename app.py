@@ -128,7 +128,7 @@ with tab1:
         cols = st.columns(3)
         for col, p in zip(cols, fruit_products[i:i+3]):
             with col:
-                st.image(p["image"], use_column_width=True)
+                st.image(p["image"], use_container_width=True)
                 st.markdown(f"<div class='product-name'>{p['name']}</div>", unsafe_allow_html=True)
                 st.markdown(f"<div class='product-price'>Giá: {p['price']:,} đ / kg</div>", unsafe_allow_html=True)
                 if p.get("het_hang", False):
@@ -149,7 +149,7 @@ with tab2:
         cols = st.columns(3)
         for col, p in zip(cols, nut_products[i:i+3]):
             with col:
-                st.image(p["image"], use_column_width=True)
+                st.image(p["image"], use_container_width=True)
                 st.markdown(f"<div class='product-name'>{p['name']}</div>", unsafe_allow_html=True)
                 st.markdown(f"<div class='product-price'>Giá: {p['price']:,} đ / kg</div>", unsafe_allow_html=True)
                 if p.get("het_hang", False):
@@ -265,7 +265,7 @@ if "cart" in st.session_state and st.session_state.cart:
  
 with tab3:
     st.subheader("🏪 Về cửa hàng Nông sản Đăk Lăk")
-    st.image("macatree.jpg", use_column_width=True)
+    st.image("macatree.jpg", use_container_width=True)
     st.markdown("""
     **Chào mừng bạn đến với Cửa hàng Nông sản Đăk Lăk!**
 
