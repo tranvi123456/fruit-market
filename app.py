@@ -155,7 +155,7 @@ with tab2:
                 if p.get("het_hang", False):
                     st.markdown(" <span style='color:red'>Đã hết hàng</span>", unsafe_allow_html=True)
                 else:
-                    qty = st.number_input(f"Số ký - {p['name']}", min_value=1, max_value=100, value=1, key=f"qty_{p['name']}")
+                    qty = st.number_input(f"Số ký - {p['name']}", min_value=0.5, max_value=100.0, value=1.0, step=0.5, key=f"qty_{p['name']}")
                     if st.button(f"🛒 Thêm - {p['name']}", key=f"btn_{p['name']}"):
                         st.session_state.cart.append({
                             "name": p["name"],
