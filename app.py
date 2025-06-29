@@ -32,21 +32,21 @@ st.markdown("""
 
 # Danh sách sản phẩm
 fruit_products = [
-    {"name": "Bơ 034", "price": 35000, "image": "fruit_picture/034.jpg"},
-    {"name": "Bơ Booth", "price": 30000, "image": "fruit_picture/booth.jpg"},
-    {"name": "Bơ sáp Nhật", "price": 30000, "image": "fruit_picture/sap_nhat.jpg"},
-    {"name": "Sầu riêng Ri6", "price": 80000, "image": "fruit_picture/ri6.jpg"},
-    {"name": "Sầu riêng Dona", "price": 85000, "image": "fruit_picture/dona.jpg"},
-    {"name": "Sầu riêng MusangKing", "price": 155000, "image": "fruit_picture/musangking.jpg"},
+    {"name": "Bơ 034", "price": 35000, "image": "034.jpg"},
+    {"name": "Bơ Booth", "price": 30000, "image": "booth.jpg"},
+    {"name": "Bơ sáp Nhật", "price": 30000, "image": "sap_nhat.jpg"},
+    {"name": "Sầu riêng Ri6", "price": 80000, "image": "ri6.jpg"},
+    {"name": "Sầu riêng Dona", "price": 85000, "image": "dona.jpg"},
+    {"name": "Sầu riêng MusangKing", "price": 155000, "image": "musangking.jpg"},
 ]
 
 
 nut_products = [
-    {"name": "Hạt điều rang muối", "price": 210000, "image": "fruit_picture/hatdieu.jpg"},
-    {"name": "Hạnh nhân Mỹ", "price": 220000, "image": "fruit_picture/hanhnhan.jpg"},
-    {"name": "Granola", "price": 150000, "image": "fruit_picture/granola.jpg"},
-    {"name": "Macca sấy size đại", "price": 230000, "image": "fruit_picture/macca_lon.jpg"},
-    {"name": "Macca sấy size trung", "price": 210000, "image": "fruit_picture/macca_nho.jpg"}
+    {"name": "Hạt điều rang muối", "price": 210000, "image": "hatdieu.jpg"},
+    {"name": "Hạnh nhân Mỹ", "price": 220000, "image": "hanhnhan.jpg"},
+    {"name": "Granola", "price": 150000, "image": "granola.jpg"},
+    {"name": "Macca sấy size đại", "price": 230000, "image": "macca_lon.jpg"},
+    {"name": "Macca sấy size trung", "price": 210000, "image": "macca_nho.jpg"}
 ]
 
 # Danh sách hết hàng
@@ -68,7 +68,7 @@ def get_base64_of_bin_file(bin_file):
         data = f.read()
     return base64.b64encode(data).decode()
 
-bin_str = get_base64_of_bin_file("fruit_picture/avo8.jpg")
+bin_str = get_base64_of_bin_file("avo8.jpg")
 
 st.markdown(
     f"""
@@ -265,7 +265,7 @@ if "cart" in st.session_state and st.session_state.cart:
  
 with tab3:
     st.subheader("🏪 Về cửa hàng Nông sản Đăk Lăk")
-    st.image("fruit_picture/macatree.jpg", use_column_width=True)
+    st.image("macatree.jpg", use_column_width=True)
     st.markdown("""
     **Chào mừng bạn đến với Cửa hàng Nông sản Đăk Lăk!**
 
