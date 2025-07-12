@@ -223,7 +223,7 @@ if "cart" in st.session_state and st.session_state.cart:
                     st.markdown("- Số tài khoản: 1680001755")
                     st.markdown("- Chủ tài khoản: Trần Hà Tường Vi")
                     # Hiển thị mã QR ngân hàng
-                    st.image("fruit_picture/qr_bank.jpg", caption="Quét để chuyển khoản", width=300)
+                    st.image("qr_bank.jpg", caption="Quét để chuyển khoản", width=300)
 
                 st.success("Cảm ơn bạn đã mua hàng. Bạn vui lòng chờ trong giây lát")
 
