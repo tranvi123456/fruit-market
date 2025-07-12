@@ -218,7 +218,7 @@ if "cart" in st.session_state and st.session_state.cart:
                 st.error("❗ Vui lòng điền đầy đủ thông tin bắt buộc.")
             else:
                 if payment_method == "Chuyển khoản trực tiếp":
-                    st.markdown("**👉 Vui lòng chuyển khoản đến thông tin sau:**")
+                    st.markdown("**👉 Vui lòng chuyển khoản đến thông tin sau, với nội dung chuyển khoản là SỐ ĐIỆN THOẠI ĐẶT HÀNG:**")
                     st.markdown("- Ngân hàng: BIDV")
                     st.markdown("- Số tài khoản: 1680001755")
                     st.markdown("- Chủ tài khoản: Trần Hà Tường Vi")
