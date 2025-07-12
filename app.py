@@ -1,5 +1,4 @@
 import streamlit as st
-st.rerun()
 import requests
 import json
 import uuid
@@ -190,7 +189,7 @@ with st.expander("🧺 Xem giỏ hàng", expanded=False):
         if cart_items_to_remove:
             for i in sorted(cart_items_to_remove, reverse=True):
                 del st.session_state.cart[i]
-            st.experimental_rerun()  # Refresh lại app
+            st.rerun()  # Refresh lại app
 
         st.write(f"**Tổng cộng: {total:,} đ**")
 
