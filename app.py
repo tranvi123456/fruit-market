@@ -1,4 +1,5 @@
 import streamlit as st
+st.rerun()
 import requests
 import json
 import uuid
