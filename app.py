@@ -169,7 +169,7 @@ with tab2:
 
 
 
-with st.expander("🧺 Xem giỏ hàng", expanded=False):
+with st.expander("🛒 Xem giỏ hàng", expanded=False):
     st.write("### 🧾 Giỏ hàng của bạn:")
     if st.session_state.cart:
         total = 0
