@@ -206,12 +206,25 @@ if "cart" in st.session_state and st.session_state.cart:
         phone = st.text_input("📱 Số điện thoại", placeholder="Ví dụ: 0909123456")
         address = st.text_area("🏠 Địa chỉ giao hàng", placeholder="Số nhà, đường, phường/xã, quận/huyện, tỉnh/thành")
         note = st.text_area("📝 Ghi chú thêm", placeholder="(Không bắt buộc)")
-
+        payment_method = st.radio(
+            "💳 Hình thức thanh toán",
+            ("Chuyển khoản trực tiếp", "Thanh toán khi nhận hàng (COD)"),
+            index=0
+            )
+        
         submit = st.form_submit_button("✅ Xác nhận đặt hàng")
         if submit:
             if not customer_name or not phone or not address:
                 st.error("❗ Vui lòng điền đầy đủ thông tin bắt buộc.")
             else:
+                if payment_method == "Chuyển khoản trực tiếp":
+                    st.markdown("**👉 Vui lòng chuyển khoản đến thông tin sau:**")
+                    st.markdown("- Ngân hàng: BIDV")
+                    st.markdown("- Số tài khoản: 1680001755")
+                    st.markdown("- Chủ tài khoản: Trần Hà Tường Vi")
+                    # Hiển thị mã QR ngân hàng
+                    st.image("fruit_picture/qr_bank.jpg", caption="Quét để chuyển khoản", width=300)
+
                 st.success("Cảm ơn bạn đã mua hàng. Bạn vui lòng chờ trong giây lát")
 
                 # 👉 TẠO order_id duy nhất cho đơn hàng
@@ -231,12 +244,13 @@ if "cart" in st.session_state and st.session_state.cart:
                     "quantity": item["quantity"],
                     "price": item["price"],
                     "total": item["price"] * item["quantity"],
-                    "order_total": order_total_amount
+                    "order_total": order_total_amount,
+                    "payment_method": payment_method
                     
                 } for item in st.session_state.cart]
 
                 # Gửi dữ liệu đến webhook Google Apps Script
-                webhook_url = "https://script.google.com/macros/s/AKfycbzQLIiOGT-6MDl8qiMsQV8GVXUSYGpf-qGNVYMerNwm_vAoIqDIU92JEJj_jVZQVRA6Ug/exec"  # Thay bằng link của bạn
+                webhook_url = "https://script.google.com/macros/s/AKfycbzSV-4E7NImctVlaHBFFtBSDiZVoqWD3IDLZ2Hw2LzwOyi09YtM0phfe9BDxBR051SuWQ/exec"  # Thay bằng link của bạn
                 response = requests.post(webhook_url, data=json.dumps(order_data))
 
                 if response.status_code == 200:
