@@ -37,7 +37,7 @@ fruit_products = [
     {"name": "Bơ sáp Nhật", "price": 30000, "image": "sap_nhat.jpg"},
     {"name": "Sầu riêng Ri6", "price": 80000, "image": "ri6.jpg"},
     {"name": "Sầu riêng Dona", "price": 85000, "image": "dona.jpg"},
-    {"name": "Sầu riêng MusangKing", "price": 155000, "image": "musangking.jpg"},
+    {"name": "Sầu riêng MusangKing", "price": 110000, "image": "musangking.jpg"},
 ]
 
 
@@ -297,5 +297,6 @@ with tab3:
 
     📞 Liên hệ: **0989 29 26 54** (zalo)
     """)
+
 
 
