@@ -50,8 +50,8 @@ nut_products = [
 ]
 
 # Danh sách hết hàng
-trai_het = ["Sầu riêng Ri6", "Sầu riêng Musang King"]
-hat_het = ["Granola"]
+trai_het = ["Bơ 034", "Bơ Booth", "Bơ sáp Nhật", "Sầu riêng Ri6", "Sầu riêng Dona"]
+hat_het = ["Hạt điều rang muối","Hạnh nhân Mỹ", "Granola", "Macca sấy size đại", "Macca sấy size trung"]
 
 # Gắn cờ hết hàng
 for item in fruit_products:
@@ -297,4 +297,5 @@ with tab3:
 
     📞 Liên hệ: **0989 29 26 54** (zalo)
     """)
+
 
