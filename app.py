@@ -42,13 +42,12 @@ fruit_products = [
 
 
 nut_products = [
-    {"name": "Hạt điều rang muối", "price": 210000, "image": "hatdieu.jpg"},
-    # {"name": "Hạnh nhân Mỹ", "price": 220000, "image": "hanhnhan.jpg"},
-    {"name": "Granola", "price": 150000, "image": "granola.jpg"},
     {"name": "Macca sấy size đại", "price": 230000, "image": "macca_lon.jpg"},
     {"name": "Macca sấy size trung", "price": 210000, "image": "macca_nho.jpg"},
     {"name": "Hạt điều rang tách vỏ lụa", "price": 370000, "image": "dieutachvo.jpg"},
     {"name": "Bột ngũ cốc", "price": 200000, "image": "botngucoc.jpg"},
+    {"name": "Hạt điều rang muối", "price": 210000, "image": "hatdieu.jpg"},
+    {"name": "Granola", "price": 150000, "image": "granola.jpg"},
 ]
 
 # Danh sách hết hàng
@@ -299,6 +298,7 @@ with tab3:
 
     📞 Liên hệ: **0989 29 26 54** (zalo)
     """)
+
 
 
 
