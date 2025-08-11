@@ -294,10 +294,11 @@ with tab3:
     - Giao hàng toàn quốc.
     - Hỗ trợ đổi trả.
     - Giao hàng trong vòng 1-3 ngày (tùy từng đợt hàng).
-    - Miễn phí giao hàng tại TP.HCM cho đơn hàng >= 10kg bơ / 5kg mắc ca / 5kg sầu riêng.
+    
 
     📞 Liên hệ: **0989 29 26 54** (zalo)
     """)
+
 
 
 
