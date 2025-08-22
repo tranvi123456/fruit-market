@@ -32,22 +32,22 @@ st.markdown("""
 
 # Danh sách sản phẩm
 fruit_products = [
-    {"name": "Bơ 034", "price": 35000, "image": "034.jpg"},
-    {"name": "Bơ Booth", "price": 30000, "image": "booth.jpg"},
-    {"name": "Bơ sáp Nhật", "price": 30000, "image": "sap_nhat.jpg"},
-    {"name": "Sầu riêng Ri6", "price": 80000, "image": "ri6.jpg"},
-    {"name": "Sầu riêng Dona", "price": 85000, "image": "dona.jpg"},
+    {"name": "Bơ 034", "price": 000, "image": "034.jpg"},
+    {"name": "Bơ Booth", "price": 000, "image": "booth.jpg"},
+    {"name": "Bơ sáp Nhật", "price": 000, "image": "sap_nhat.jpg"},
+    {"name": "Sầu riêng Ri6", "price": 000, "image": "ri6.jpg"},
+    {"name": "Sầu riêng Dona", "price": 000, "image": "dona.jpg"},
     {"name": "Sầu riêng MusangKing", "price": 110000, "image": "musangking.jpg"},
 ]
 
 
 nut_products = [
-    {"name": "Macca sấy size đại", "price": 230000, "image": "macca_lon.jpg"},
-    {"name": "Macca sấy size trung", "price": 210000, "image": "macca_nho.jpg"},
+    {"name": "Macca sấy size đại", "price": 235000, "image": "macca_lon.jpg"},
+    {"name": "Macca sấy size trung", "price": 220000, "image": "macca_nho.jpg"},
     {"name": "Hạt điều rang tách vỏ lụa", "price": 370000, "image": "dieutachvo.jpg"},
     {"name": "Bột ngũ cốc", "price": 200000, "image": "botngucoc.jpg"},
     {"name": "Hạt điều rang muối", "price": 210000, "image": "hatdieu.jpg"},
-    {"name": "Granola", "price": 150000, "image": "granola.jpg"},
+    {"name": "Granola", "price": 000, "image": "granola.jpg"},
 ]
 
 # Danh sách hết hàng
@@ -298,6 +298,7 @@ with tab3:
 
     📞 Liên hệ: **0989 29 26 54** (zalo)
     """)
+
 
 
 
