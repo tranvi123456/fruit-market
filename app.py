@@ -45,7 +45,7 @@ nut_products = [
     {"name": "Macca sấy size đại", "price": 235000, "image": "macca_lon.jpg"},
     {"name": "Macca sấy size trung", "price": 220000, "image": "macca_nho.jpg"},
     {"name": "Hạt điều rang tách vỏ lụa", "price": 370000, "image": "dieutachvo.jpg"},
-    {"name": "Bột ngũ cốc", "price": 200000, "image": "botngucoc.jpg"},
+    {"name": "Bột ngũ cốc nhà xay", "price": 200000, "image": "botngucoc.jpg"},
     {"name": "Hạt điều rang muối", "price": 210000, "image": "hatdieu.jpg"},
     {"name": "Granola", "price": 000, "image": "granola.jpg"},
 ]
@@ -298,6 +298,7 @@ with tab3:
 
     📞 Liên hệ: **0989 29 26 54** (zalo)
     """)
+
 
 
 
