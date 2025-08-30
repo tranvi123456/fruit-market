@@ -37,7 +37,7 @@ fruit_products = [
     {"name": "Bơ sáp Nhật", "price": 000, "image": "sap_nhat.jpg"},
     {"name": "Sầu riêng Ri6", "price": 000, "image": "ri6.jpg"},
     {"name": "Sầu riêng Dona", "price": 000, "image": "dona.jpg"},
-    {"name": "Sầu riêng MusangKing", "price": 110000, "image": "musangking.jpg"},
+    {"name": "Sầu riêng MusangKing", "price": 0000, "image": "musangking.jpg"},
 ]
 
 
@@ -51,7 +51,7 @@ nut_products = [
 ]
 
 # Danh sách hết hàng
-trai_het = ["Bơ 034", "Bơ Booth", "Bơ sáp Nhật", "Sầu riêng Ri6", "Sầu riêng Dona"]
+trai_het = ["Bơ 034", "Bơ Booth", "Bơ sáp Nhật", "Sầu riêng Ri6", "Sầu riêng Dona", "Sầu riêng MusangKing"]
 hat_het = ["Hạt điều rang muối", "Granola",  "Macca sấy size trung"]
 
 # Gắn cờ hết hàng
@@ -298,6 +298,7 @@ with tab3:
 
     📞 Liên hệ: **0989 29 26 54** (zalo)
     """)
+
 
 
 
